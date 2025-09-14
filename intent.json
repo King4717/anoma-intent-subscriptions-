@@ -1,19 +1,17 @@
-{
-  "type": "subscription",
-  "version": "1.0",
-  "description": "Recurring cross-chain subscription payment",
-  "payer": "0xYourWalletAddressHere",
-  "recipient": "0xRecipientWalletAddressHere",
-  "amount": {
-    "value": "10",
-    "token": "USDC"
-  },
-  "frequency": "monthly",
-  "start_date": "2025-09-15T00:00:00Z",
-  "next_execution": "2025-10-15T00:00:00Z",
-  "conditions": {
-    "chains_allowed": ["Ethereum", "Cosmos", "Polygon"],
-    "failover": "skip_payment_if_no_liquidity"
-  },
-  "signature": "0xMockSignature123456789"
-}
+
+  type subscription
+  version 1.0
+  description Recurring cross chain subscription payment
+  payer 0xYourWalletAddressHere
+  recipient 0xRecipientWalletAddressHere
+  amount
+  value 10 
+    token USDC
+  
+  frequency monthly
+  start date 2025-09-15T00.00.00Z
+  next_execution 2025-10-15T00.00.00Z
+  conditions
+    chains_allowed Ethereum Cosmos Polygon
+    failover skip payment if no liquidity
+  signature 0xMockSignature123456789
